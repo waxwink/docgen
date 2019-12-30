@@ -1,0 +1,14 @@
+{
+    "name": "waxwink/docgen",
+    "description": "A laravel package for dynamic api documentation generating",
+    "require": {
+        "laravel/framework": ">=5.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamadreza",
+            "email": "darkknight_89@yahoo.com"
+        }
+    ]
+}
