@@ -29,7 +29,6 @@ class DocumentationGenerator
      * @param \Illuminate\Routing\Route $route
      * @param array $routes
      * @return array
-     * @throws \App\Exceptions\ResourceClassNotFoundException
      * @throws \ReflectionException
      */
     protected function routes(\Illuminate\Routing\Route $route, array $routes): array
@@ -54,7 +53,6 @@ class DocumentationGenerator
      * @param $action
      * @param array $item
      * @return array
-     * @throws \App\Exceptions\ResourceClassNotFoundException
      * @throws \ReflectionException
      */
     protected function setControllerParams($action, array $item): array
@@ -80,6 +78,8 @@ class DocumentationGenerator
     protected function resolveControllerNameAndMethod($action): array
     {
         $array = explode("@", $action["controller"]);
+        if (sizeof($array) <=1)
+            return [$array[0], "_invoke"];
         $class = $array[0];
         $method = $array[1];
         return array($class, $method);
