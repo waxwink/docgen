@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Pinwork\DocGen\Providers;
+namespace Waxwink\DocGen\Providers;
 
 
 use Illuminate\Support\ServiceProvider;

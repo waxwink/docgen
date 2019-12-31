@@ -1,6 +1,6 @@
 {
     "name": "waxwink/docgen",
-    "description": "A laravel package for dynamic api documentation generating",
+    "description": "A laravel package for dynamic API documentation generating",
     "require": {
         "laravel/framework": ">=5.8"
     },
@@ -8,7 +8,12 @@
     "authors": [
         {
             "name": "Mohamadreza",
-            "email": "darkknight_89@yahoo.com"
+            "email": "mpishdad89@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Waxwink\\DocGen\\": "src/"
+        }
+    }
 }

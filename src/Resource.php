@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Pinwork\DocGen;
+namespace Waxwink\DocGen;
 
 
-use App\Exceptions\ResourceClassNotFoundException;
 use ReflectionClass;
+use Waxwink\DocGen\Exceptions\ResourceClassNotFoundException;
 
 class Resource
 {

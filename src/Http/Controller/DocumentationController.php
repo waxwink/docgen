@@ -1,13 +1,12 @@
 <?php
 
 
-namespace Pinwork\DocGen\Http\Controller;
+namespace Waxwink\DocGen\Http\Controller;
 
 
-use Pinwork\Core\Http\Controllers\Controller;
-use Pinwork\DocGen\DocumentationGenerator;
+use Waxwink\DocGen\DocumentationGenerator;
 
-class DocumentationController extends Controller
+class DocumentationController
 {
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

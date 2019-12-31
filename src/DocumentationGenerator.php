@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Pinwork\DocGen;
+namespace Waxwink\DocGen;
 
 
 use Exception;
@@ -165,7 +165,7 @@ class DocumentationGenerator
 
         if (preg_match('/@DG-Resource (.*)/', $doc, $resource)) {
             $resourceClass = trim($resource[1]);
-            $item["output_keys"] = (new \Pinwork\DocGen\Resource())->keys($resourceClass);
+            $item["output_keys"] = (new \Waxwink\DocGen\Resource())->keys($resourceClass);
         }
         return $item;
     }
