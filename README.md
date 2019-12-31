@@ -21,7 +21,7 @@ DocGen will use that request object to resolve the request body and the rules wi
       * @param OrderRequest $request
       * @return AnonymousResourceCollection
       */
-     public function index(OrderSearchRequest $request)
+     public function index(OrderRequest $request)
      {
          //....
       }
