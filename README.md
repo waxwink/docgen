@@ -1,7 +1,11 @@
 # DocGen
-
+If you need a minimal API documentation quickly for your front end team, this package might help you.
+ 
 ## Instruction
-
+For installing just use the following command:
+```
+composer require waxwink/docgen
+```
 This package can work as soon as it gets installed by going to `/routes`.
 But for more complete api documentation you need to follow some rules in your laravel app:
 
