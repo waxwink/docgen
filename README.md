@@ -6,8 +6,11 @@ For installing just use the following command:
 ```
 composer require waxwink/docgen
 ```
-This package can work as soon as it gets installed by going to `/routes`.
-But for more complete api documentation you need to follow some rules in your laravel app:
+After that publish the necessary js ans css files to public folder for the documentation view:
+```
+php artisan vendor:publish --tag=public
+```
+This package can now work by going to `/routes` url but for more complete api documentation you need to follow some rules in your laravel app:
 
 ### Request Body
 For including the request body of each route to the documentation you must use a FormRequest object as a input parameter in the related controller.
@@ -28,6 +31,5 @@ DocGen will use that request object to resolve the request body and the rules wi
      public function index(OrderRequest $request)
      {
          //....
-      }
- 
+     }
  ```
